@@ -19,15 +19,15 @@ warehouse"), and automates order status transitions based on
 inventory availability and incoming deliveries.
 
 ```text
-                  ┌─────────────────────┐
+                  ┌──────────────────────┐
                   │  External Order API  │
                   └──────────┬───────────┘
                              │ sync (cron)
                              ▼
-                  ┌─────────────────────┐
-                  │   Local database    │
-                  │  (orders, inventory,│
-                  │   invoices, logs)   │
+                  ┌──────────────────────┐
+                  │   Local database     │
+                  │  (orders, inventory, │
+                  │   invoices, logs)    │
                   └──────────┬───────────┘
                              │
               ┌──────────────┼──────────────┐
